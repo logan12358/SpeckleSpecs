@@ -4,6 +4,16 @@
 
 View these docs [here](https://speckleworks.github.io/SpeckleSpecs/).
 
+## In Progress
+
+This branch in currently in the process of being edited. Here are some steps:
+- [ ] Edit descriptions in all schemas.
+- [ ] Edit descriptions in all paths.
+- [ ] Add examples.
+- [ ] Don't require JWT for login endpoint.
+- [ ] See if things can be factored out into '#/components'
+- [ ] Flesh out schemas (required fields and such)
+
 ## Build
 
 1. `npm install`
