@@ -7,12 +7,14 @@ View these docs [here](https://speckleworks.github.io/SpeckleSpecs/).
 ## In Progress
 
 This branch in currently in the process of being edited. Here are some steps:
+- [ ] Set out some style guidelines (for phrasing of descriptions)
 - [ ] Edit descriptions in all schemas.
 - [ ] Edit descriptions in all paths.
 - [ ] Add examples.
 - [ ] Don't require JWT for login endpoint.
-- [ ] See if things can be factored out into '#/components'
-- [ ] Flesh out schemas (required fields and such)
+- [ ] See if things can be factored out into '#/components'.
+- [ ] Flesh out schemas (required fields and such).
+- [ ] Perhaps rename some schemas.
 
 ## Build
 

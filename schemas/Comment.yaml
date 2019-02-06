@@ -1,27 +1,39 @@
-description: A comment/issue.
+description: A comment or issue. A comment is associated with a resource, specified by a type and id.
 allOf:
-  - $ref: './ResourceBase.yaml'
+  - $ref: ./ResourceBase.yaml
   - properties:
       resource:
         type: object
+        description: The resource which the comment refers to.
         properties:
           resourceType:
             type: string
+            description: The type of the resource.
+            enum: [ stream, object, project, comment ]
           resourceId:
             type: string
+            description: The id of the resource.
       text:
         type: string
+        description: The text of the comment.
       assignedTo:
         type: array
+        description: A list of Users which the comment is assigned to.
         items: 
           type: string
+          description: The id of a User.
       closed:
         type: boolean
+        description: Whether this comment is "closed".
       labels:
         type: array
+        description: A list of labels on the comment.
         items: 
           type: string
+          description: The label text.
       view: 
         type: object
+        description: A representation of the view the comment refers to. #TODO: document how this should be encoded.
       screenshot:
         type: string
+        description: A screenshot of this issue. #TODO: document how this should be encoded.

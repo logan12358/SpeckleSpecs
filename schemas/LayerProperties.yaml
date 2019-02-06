@@ -1,4 +1,8 @@
 type: object
+description: |-
+  Holds stream layer properties, mostly for displaying purposes. This object
+  will be filled up with garbage from threejs and others, but below is a minimal
+  schema.
 properties:
   color:
     type: object
@@ -31,4 +35,3 @@ properties:
   wireframe:
     type: boolean
     description: i'm bored.
-description: 'Holds stream layer properties, mostly for displaying purposes. This object will be filled up with garbage from threejs and others, but below is a minimal schema.'

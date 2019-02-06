@@ -1,4 +1,4 @@
-description: A speckle client.
+description: A Speckle client. A client is always attached to exactly one stream. A client typically belongs to a particular document, such as a Grasshopper or Dynamo script.
 allOf:
   - $ref: './ResourceBase.yaml'
   - properties:
@@ -7,18 +7,22 @@ allOf:
         description: Database uuid.
       role:
         type: string
-        description: Either Sender, Receiver or anything else you can think of.
+        description: Typically either `Sender` or `Receiver`.
       documentGuid:
         type: string
+        description: The GUID of the document.
       documentName:
         type: string
+        description: The name of the document.
       documentType:
         type: string
+        description: The type of the document.
       documentLocation:
         type: string
+        description: The location of the document.
       streamId:
         type: string
-        description: The streamId that this client is attached to.
+        description: The id of the stream that the client is attached to.
       online:
         type: boolean
-        description: Is it accessible from the server or not?
+        description: Whether the client is currently accessible from the server.
